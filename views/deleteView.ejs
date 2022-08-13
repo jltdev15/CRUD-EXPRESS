@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<body style="background-color:gray ;">
+    <form action="/delete" method="POST">
+    <div class="confirm-panel">
+        <div class="row">
+            <div class="col-12 text-center">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            <div class="col-12 text-center">
+                <input name="userID" value="<%= userid%>" hidden>
+                <p class="deletetitle">Are you sure to delete this contact ?</p>
+            </div>
+            <div class="col-12 text-center">
+                <a href="/view" class="btn btn-outline-dark">Cancel</a>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

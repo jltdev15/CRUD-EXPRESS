@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+    <div class="container">
+        <div class="header-index">
+            <h1 class="bg-primary">Update contact</h1>
+        </div>
+        <div class="user-panel">
+            <form action="/update" method="POST">
+                <input value="<%=fullname %>" name="fullname" class="form-control" type="text" >
+                <input value="<%= phone %>" name="phone" class="form-control" type="text" >
+                <input value="<%= email %>" name="email" class="form-control" type="text" >
+                
+                <input name="id" value="<%= foundID %>" hidden>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-danger " type="button" onclick="location.href ='/view'">Cancel</button>
+                <button class="btn btn-primary " type="submit">Update</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    <%- include('partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<body style="background-color:gray ;">
+   
+    <div class="success-panel">
+        <div class="row">
+            <div class="col-12 text-center">
+                <i class="far fa-check-circle"></i>
+                </div>
+            <div class="col-12 text-center">
+                <h2 class="headtitle">Awesome!</h2>
+            </div>
+            <div class="col-12 text-center">
+                <p class="success-content"><%= successMessage %> </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function () {
+           // after 2 seconds
+           window.location = "/view";
+        }, 1500)
+      </script>      
+
+</body>
+</html>

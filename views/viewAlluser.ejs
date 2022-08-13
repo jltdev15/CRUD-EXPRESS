@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <div class="user-panel">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr class="text-center">
+                <th>Username</th>
+                <th>Phone number</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+        <tbody>
+            <% foundUser.forEach(function(foundData){ %> 
+            <tr>
+                 <td><%=foundData.fullName %></td> 
+                 <td><%=foundData.contactNumber %></td>  
+                 <td><%=foundData.emailAddress %></td>
+                 <td>
+                    <div class="update-action text-center">
+                       <a class="btn btn-primary" href="user/<%= foundData._id%>">Modify</a>
+                       <a class="btn btn-danger" href="delete/<%= foundData._id %>">Remove</a>
+                    </div>
+                </td>
+            </tr>
+                   
+            <% }); %>
+ 
+        </tbody>
+        </table>
+    </div>
+</div>
+<%- include('partials/footer') %>

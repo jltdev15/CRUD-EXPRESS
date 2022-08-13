@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+.header-index {
+    margin: 3% auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 4px;
+    
+}
+.header-index h1 {
+    padding: 10px 15px;
+    color: aliceblue;
+}
+/* Index */
+.home-panel {
+    /* margin: 10% auto; */
+    padding: 1% 0;
+    width: 70%;
+    text-align: center;
+    margin: 5% auto;
+}
+.home-panel a {
+    /* margin: 10% auto; */
+    border-radius: 12px;
+    margin: 3% ;
+}
+.home-panel p {
+    /* margin: 10% auto; */
+  font-size: 1.2rem;
+  line-height: 20px;
+
+}
+.fa-user-plus {
+    padding: 20px 25px;
+}
+.fa-list  {
+    padding: 20px 30px;
+}
+.fa-search {
+    padding: 20px 30px;
+}
+.icons {
+    font-size: 3rem;
+}
+
+
+.user-panel {
+    width: 50%;
+    margin: 8% auto;
+    padding: 0 50px;
+}
+.user-panel h1 {
+    padding: 30px;
+    letter-spacing: 2px;
+}
+.form-control {
+    margin-bottom: 20px;
+}
+.fa-address-book {
+    font-size: 5rem;
+    color: blue;
+}
+
+
+/* U */
+.btn-modify {
+    background-color: rgb(51, 0, 255);
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+
+/* Success view */
+.success-panel {
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.fa-check-circle{
+    font-size: 12rem;
+    color: green;
+}
+.headtitle {
+    padding: 25px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.success-content{
+    font-size: 1.5rem;
+}
+
+/* DeleteView */
+
+.fa-times-circle {
+    font-size: 10rem;
+    color: red;
+    padding: 20px 0;
+}
+.confirm-panel {
+    width: 30%;
+    margin: 5% auto;
+    padding: 30px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.deletetitle {
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Errorview */
+
+.fa-database {
+    font-size: 10rem;
+    color:rgb(210, 210, 210) ;
+    padding: 20px 0;
+}
+.error-panel {
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.error-title {
+    padding: 25px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.error-content{
+    font-size: 1.5rem;
+}
+/* View for contact */
+.contact-container {
+    margin: 3% auto;
+    text-align: center;
+    width: 25%;
+    background-color: rgb(226, 226, 226);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.contact-header h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.contact-content{
+    line-height: 10px;
+}
+.btn-edit {
+    width: 80%;
+    margin-bottom: 5%;
+}
+.img-contact {
+    margin: 2%;
+    width: 100px;
+    height: inherit;
+    padding: 2% 3%;
+}
+@media only screen and (max-width: 600px) {
+
+    /* Index */
+
+    .header-index h1 {
+        padding: 20px 15px;
+        color: aliceblue;
+    }
+    .home-panel {
+        /* margin: 10% auto; */
+        padding: 15% 0;
+        width: 100%;
+        text-align: center;
+        margin: 5% 0;
+
+    }
+    .home-panel a {
+        /* margin: 10% auto; */
+        border-radius: 12px;
+        margin: 3% ;
+    }
+    .home-panel p {
+        /* margin: 10% auto; */
+      font-size: 1.2rem;
+      line-height: 20px;
+
+    }
+    .fa-user-plus {
+        padding: 20px 25px;
+    }
+    .fa-list  {
+        padding: 20px 30px;
+    }
+    .fa-search {
+        padding: 20px 30px;
+    }
+    .icons {
+        font-size: 3rem;
+    }
+
+    /* Registration */
+    .user-panel {
+        width: 100%;
+        margin: 20% 0;
+        padding: 0 1px;
+    }
+    .user-panel h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+        letter-spacing: 1px;
+    }
+    .form-control {
+        margin-bottom: 30px;
+    }
+    /* for success view */
+
+    .fa-database {
+        font-size: 5rem;
+        color:rgb(210, 210, 210) ;
+    }
+    .error-panel {
+        width: 80%;
+        margin: 50% auto;
+        border-radius: 50px;
+    }
+    .error-title {
+        padding: 2px 0;
+        font-size: 2rem;
+    }
+    .error-content{
+        font-size: 1rem;
+    }
+
+        /* Success view */
+    .success-panel {
+        width: 80%;
+        margin: 50% auto;
+        border-radius: 50px;
+    }
+    .fa-check-circle{
+        font-size: 5rem;
+    }
+    .headtitle {
+        padding: 2px 0;
+        font-size: 2rem;
+    }
+    .success-content{
+        font-size: 1rem;
+    }
+
+    /* contactView */
+    .contact-container {
+        margin: 10% auto;
+        width: 80%;
+        border-radius: 10px;
+       
+    }
+    .contact-header h2 {
+        font-size: 1rem;
+    }
+    .contact-content{
+        line-height: 10px;
+    }
+
+         /* DeleteView */
+
+    .fa-times-circle {
+        font-size: 5rem;
+        color: red;
+
+    }
+    .confirm-panel {
+        width: 80%;
+        margin: 50% auto;
+        padding: 15px 0px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    .deletetitle {
+        padding: 1px 0;
+     
+        font-size: 0.8rem;
+    }   
+}

@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+  
+        <div class="container-fluid">
+            <div class="header-index">
+                <h1 class="bg-primary">New contact</h1>
+            </div>
+        <div class="user-panel">
+            <form action="/registration" method="POST">
+                <input name="name" class="form-control" type="text" placeholder="Full name" required>
+                <input name="number" class="form-control" type="text" placeholder="Phone number" required>
+                <input name="email" class="form-control" type="text" placeholder="Email address" required>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  
+                <button class="btn btn-primary " type="submit">Register</button>
+                <a class="btn btn-outline-danger " href="/" >Discard</a>
+             
+                </div>
+            </form>
+        </div>
+</div>
+<%- include('partials/footer') %>
