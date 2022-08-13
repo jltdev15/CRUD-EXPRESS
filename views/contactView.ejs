@@ -3,9 +3,9 @@
 <div class="header-index">
     <h1 class="bg-primary">Contact Manager</h1>
 </div>
-  
+<% foundUser.forEach((foundData) =>{ %>
 <div class="contact-container">
-    <% foundUser.forEach((foundData) =>{ %>
+
     <section class="contact-header">
         <img class="img-contact" src="/img/1.png" alt="contact-photo" height="100" width="100">
         <h2><%=foundData.fullName %></h2>
@@ -18,8 +18,9 @@
         <a class="btn btn-edit btn-primary" href="user/<%= foundData._id%>">Modify</a>
         <a class="btn btn-edit btn-danger" href="delete/<%= foundData._id%>">Remove</a>
     </section>
-   
+  
 </div>
+  <% }); %>
 </div>
-<% }); %>
+
 <%- include('partials/footer') %>
