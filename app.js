@@ -18,7 +18,13 @@ app.use(bodyParser.urlencoded({
 
 app.use('/api/v1/users', userRoutes);
 app.use('/', userRoutes);
-app.use('/', viewRoutes)
+app.use('/', viewRoutes);
+
+app.all('*', (req,res, next) => {
+    res.render('errorView',{
+        errorMessage: `Cant find this ${ req.originalUrl } on this server!`
+    })
+})
 
 
 
