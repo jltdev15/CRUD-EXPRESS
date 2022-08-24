@@ -7,14 +7,14 @@ body {
     background-color: black;
 }
 .header-index {
-    margin: 3% auto;
+    margin: 2% auto;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 4px;
+   
     
 }
 .header-index h1 {
     padding: 10px 15px;
-    color: aliceblue;
+    color: black;
 }
 /* Index */
 .home-panel {
@@ -144,30 +144,25 @@ a {
 .error-content{
     font-size: 1.5rem;
 }
-/* View for contact */
+/* List View for contact */
 .contact-container {
     margin: 3% auto;
-    text-align: center;
-    width: 25%;
-    background-color: rgb(226, 226, 226);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+.contact-header a {
+    text-decoration: none;
 }
 .contact-header h2 {
     font-size: 1rem;
     text-transform: uppercase;
-}
-.contact-content{
-    line-height: 10px;
-}
-.btn-edit {
-    width: 80%;
-    margin-bottom: 5%;
+    display: inline;
+    text-align: center;
 }
 .img-contact {
     margin: 2%;
-    width: 100px;
+    width: 50px;
     height: inherit;
     padding: 2% 3%;
 }
@@ -263,16 +258,9 @@ a {
 
     /* contactView */
     .contact-container {
-        margin: 10% auto;
-        width: 80%;
-        border-radius: 10px;
-       
-    }
-    .contact-header h2 {
-        font-size: 1rem;
-    }
-    .contact-content{
-        line-height: 10px;
+     
+        width: 100%;
+
     }
 
          /* DeleteView */
