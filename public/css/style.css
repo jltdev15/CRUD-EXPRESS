@@ -9,6 +9,7 @@ body {
 .header-index {
     margin: 2% auto;
     text-align: center;
+    background-color: gainsboro;
    
     
 }
@@ -151,6 +152,10 @@ a {
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
 }
+.contact-container:hover{
+ background-color: rgb(205, 205, 205);
+ cursor: pointer;
+}
 .contact-header a {
     text-decoration: none;
 }
@@ -172,7 +177,7 @@ a {
 
     .header-index h1 {
         padding: 20px 15px;
-        color: aliceblue;
+      
     }
     .home-panel {
         /* margin: 10% auto; */

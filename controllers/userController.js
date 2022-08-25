@@ -116,7 +116,7 @@ exports.getAllUser = async (req,res) => {
             // })
          }
          else {
-            res.render('contactView', {
+            res.render('listView', {
                 foundUser: AllUser
              })
          }

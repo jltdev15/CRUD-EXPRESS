@@ -1,13 +1,31 @@
 <%- include('partials/header') %>
 <div class="container">
-<div class="header-index">
-    <h1 class="bg-primary">Contact Manager</h1>
-</div>
-<% foundUser.forEach((foundData) =>{ %>
-    <div class="contact-container">
-    11
+    <div class="header-index">
+        <h1 class="sticky-md-top">Contact Manager</h1>
     </div>
-  <% }); %>
+    <div class="container">
+    <div class="row">
+        <% foundUser.forEach((foundData) =>{ %>
+        <div class="col-md-4">
+        <div class="contact-container">
+        <section class="contact-header">
+           <img class="img-contact" src="/img/1.png">
+          <a href="user/<%= foundData._id%>"><h2><%=foundData.fullName %></h2></a> 
+        </section>
+
+        <!-- <section class="controls">
+            <a class="btn btn-edit btn-primary" href="user/<%= foundData._id%>">Modify</a>
+            <a class="btn btn-edit btn-danger" href="delete/<%= foundData._id%>">Remove</a>
+        </section> -->
+        
+        </div>
+    </div>
+    <% }); %>
+
+</div>
+
+</div>
+
 </div>
 
 <%- include('partials/footer') %>
