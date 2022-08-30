@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const ejs = require('ejs')
+
 
 const app = express();
 app.set("view engine","ejs");
