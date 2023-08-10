@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.route('/view')
 .get(userController.getAllUser);
+
 router.route('/user/:id')
 .get(userController.getUser);
 router.route('/delete/:id')

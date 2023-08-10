@@ -17,13 +17,13 @@ exports.createUser = async (req,res) => {
                 })
             }
         })
-        //For postman - API
-        // res.status(202).json({
-        //     status: 'sucess',
-        //     data: {
-        //         user: newUser,
-        //     }
-        // });
+        // For postman - API
+        res.status(202).json({
+            status: 'sucess',
+            data: {
+                user: newUser,
+            }
+        });
     }
     catch(err) {
         res.status(400).json({
@@ -58,13 +58,13 @@ exports.updateUser = async (req,res) => {
                 }
                 );
                 // for postman
-                // res.status(200).json({
-                //     status: 'sucess updated',
+                res.status(200).json({
+                    status: 'sucess updated',
                  
-                //     data: {
-                //         user,
-                //     }
-                // })
+                    data: {
+                        user,
+                    }
+                })
         
         }
         catch(err) {
@@ -116,9 +116,14 @@ exports.getAllUser = async (req,res) => {
             // })
          }
          else {
-            res.render('listView', {
-                foundUser: AllUser
-             })
+            // res.render('listView', {
+            //     foundUser: AllUser
+            //  })
+            res.status(200).json({
+                status: 'Get all user success!',
+                AllUser
+            }) 
+
          }
      }
      catch (err) {
@@ -130,13 +135,19 @@ exports.getAllUser = async (req,res) => {
 exports.getUser = async (req,res) => {
     try {
         const user = await User.findById({_id: req.params.id});
-        res.render('viewUser',{
-            foundID: user._id,
-            fullname: user.fullName,
-            phone: user.contactNumber,
-            email: user.emailAddress,
-        });
-            
+        // res.render('viewUser',{
+        //     foundID: user._id,
+        //     fullname: user.fullName,
+        //     phone: user.contactNumber,
+        //     email: user.emailAddress,
+        // });
+        res.status(200).json({
+            status: 'get single user success!',
+         
+            data: {
+                user,
+            }
+        }) 
             //     res.render('viewUser', {
             //         foundID: results._id,
             //         user: results.fullname,

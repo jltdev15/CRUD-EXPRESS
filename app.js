@@ -1,9 +1,12 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+var cors = require('cors')
+
 
 
 const app = express();
+app.use(cors());
 app.set("view engine","ejs");
 app.use(morgan('dev'));
 app.use(express.json());
