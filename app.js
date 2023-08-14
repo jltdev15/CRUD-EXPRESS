@@ -19,8 +19,8 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 
+// app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/users', userRoutes);
-app.use('/', userRoutes);
 app.use('/', viewRoutes);
 
 app.all('*', (req,res, next) => {

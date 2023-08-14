@@ -9,7 +9,7 @@ exports.createUser = async (req, res) => {
         res.status(202).json({
             status: 'Sucess',
             data: {
-                user: req.body.fullName
+                user: req.body
             },
         
             
@@ -116,15 +116,15 @@ exports.deleteView = async (req, res) => {
 //Delete data
 exports.deleteUser = async (req, res) => {
   try {
-    await User.findByIdAndDelete(req.body.userID, (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log("Deleted");
-        res.redirect("/view");
-      }
-    });
-  } catch (err) {}
+   const deletedData =  await User.findByIdAndDelete(req.params.id)
+    if(!deletedData){
+      console.log('No document found with that ID');
+    }
+    res.status(204).json({
+      status: 'status',
+      data: deletedData
+    })
+  }catch (err) {}
 };
 //Alluser View
 exports.getAllUser = async (req, res) => {
@@ -155,12 +155,12 @@ exports.getAllUser = async (req, res) => {
 exports.getUser = async (req, res) => {
   try {
     const user = await User.findById({ _id: req.params.id });
-    res.render('viewUser',{
-        foundID: user._id,
-        fullname: user.fullName,
-        phone: user.contactNumber,
-        email: user.emailAddress,
-    });
+    // res.render('viewUser',{
+    //     foundID: user._id,
+    //     fullname: user.fullName,
+    //     phone: user.contactNumber,
+    //     email: user.emailAddress,
+    // });
     res.status(200).json({
       status: "get single user success!",
 
