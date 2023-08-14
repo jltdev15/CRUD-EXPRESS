@@ -1,8 +1,8 @@
 exports.loginView = async (req,res) => {
-    res.render('userRegistration');
+    await res.render('userRegistration');
 }
 exports.homepageView = async (req,res) => {
-    res.render('index');
+    await res.render('index');
 }
 
 
